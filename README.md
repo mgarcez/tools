@@ -13,6 +13,10 @@ If your Java version is too old for Eclipse, you can edit **eclipse.ini**, addin
 D:/java/jdk1.7.0_80_x64/jre/bin/javaw.exe
 ```
 
+## Java Decompiler
+
+### JD-Gui (https://github.com/java-decompiler/jd-gui)
+
 ## Terminals
 
 ### ConEmu (https://conemu.github.io/)
@@ -42,8 +46,12 @@ Unix command line utilities installer for Windows.
 ## Web browsers
 
 ### Firefox extensions:
-* AdBlocker Ultimate
 * FireGestures
 * IE Tab 2
 * RefControl (economist.com, lesechos.fr, wsj.com -> http://news.google.com/news/)
 * TabMix Plus
+
+## Windows
+
+### Sysinternals Process Utilities (https://technet.microsoft.com/en-us/sysinternals/bb795533.aspx):
+* Process Explorer: https://technet.microsoft.com/en-us/sysinternals/processexplorer
