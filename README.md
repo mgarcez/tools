@@ -40,6 +40,7 @@ Unix command line utilities installer for Windows.
 ### Atom packages:
 * Markdown preview
 * Minimap
+* File-icons
 * Python Autopep8
 * Python Nosetests
 
