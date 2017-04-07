@@ -17,6 +17,7 @@ brew install git
 brew install bash-completion
 
 brew cask install atom
+brew cask install visual-studio-code
 brew cask install google-chrome
 brew cask install firefox
 brew cask install github-desktop
@@ -26,6 +27,17 @@ brew cask install vlc
 
 ## iTerm2
 https://gist.github.com/kevin-smets/8568070
+
+`.zshrc`:
+```bash
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_DIR_HOME_BACKGROUND="red"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="27"
+#POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="249"
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time)
+
+plugins=(git mvn common-aliases docker web-search)
+```
 
 ## Tips
 
