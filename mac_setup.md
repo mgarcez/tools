@@ -14,7 +14,7 @@ brew cask install iterm2
 brew install maven
 brew install vim
 brew install git
-brew install bash-completion
+brew install bash-completion watch tree
 
 brew cask install atom
 brew cask install visual-studio-code
@@ -23,6 +23,7 @@ brew cask install firefox
 brew cask install github-desktop
 brew cask install eclipse-java
 brew cask install vlc
+brew cask install magicprefs
 ```
 
 ## iTerm2
