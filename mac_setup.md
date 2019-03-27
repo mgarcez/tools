@@ -22,8 +22,13 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install github-desktop
 brew cask install eclipse-java
+brew cask install intellij-idea-ce
 brew cask install vlc
 brew cask install magicprefs
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 ## iTerm2
@@ -31,13 +36,34 @@ https://gist.github.com/kevin-smets/8568070
 
 `.zshrc`:
 ```bash
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/mgarcez/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_DIR_HOME_BACKGROUND="red"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="27"
 #POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="249"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time)
 
-plugins=(git mvn common-aliases docker web-search)
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git mvn common-aliases docker zsh-syntax-highlighting zsh-autosuggestions)
+
+export PATH=$PATH:/Users/mgarcez/Documents/git_clones
+
+setopt HIST_IGNORE_DUPS
+setopt hist_ignore_all_dups
+unsetopt share_history
+
+setopt auto_cd                  # if command is a path, cd into it
+
+source $ZSH/oh-my-zsh.sh
+
 ```
 
 ## Tips
